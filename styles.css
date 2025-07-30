@@ -1,0 +1,697 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #BAEEEAEF;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos adicionales para el formulario de contacto */
+.contact-section {
+    padding: 80px 0;
+    background-color: #e0cbe2;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239566e2' fill-opacity='0.23' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    -webkit-appearance: none; /* Mejora la apariencia en iOS */
+    appearance: none;
+}
+
+.form-control:focus {
+    border-color: #ff6b95;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 149, 0.2);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group.error .form-control {
+    border-color: #ff3860;
+}
+
+.error-message {
+    color: #ff3860;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Mejoras para el formulario en dispositivos móviles */
+@media (max-width: 576px) {
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Previene zoom en iOS */
+        padding: 12px; /* Botones más grandes para tocar */
+    }
+    
+    textarea.form-control {
+        min-height: 100px; /* Altura reducida en móviles */
+    }
+    
+    .contact-form .btn {
+        width: 100%; /* Botón a ancho completo en móviles */
+        padding: 12px;
+    }
+}
+
+/* Estilos para dispositivos táctiles */
+.touch-device .category-card:active,
+.touch-device .btn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}
+
+.touch-active {
+    transform: scale(0.98);
+}
+
+/* Mejoras de accesibilidad - outline para foco */
+:focus {
+    outline: 3px solid rgba(255, 133, 162, 0.5);
+    outline-offset: 2px;
+}
+
+/* Ocultar outline para usuarios de mouse, pero mantenerlo para teclado */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(255, 133, 162, 0.5);
+    outline-offset: 2px;
+}
+
+/* Estilos para hover solo en dispositivos que lo soportan */
+@media (hover: hover) {
+    .btn:hover {
+        background-color: #ff6b8e;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-secondary:hover {
+        background-color: #e9ecef;
+        color: #ff85a2;
+        border-color: #ff85a2;
+    }
+    
+    .category-image:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos para dispositivos táctiles */
+@media (hover: none) {
+    .btn:active {
+        background-color: #ff6b8e;
+        transform: scale(0.98);
+    }
+    
+    .btn-secondary:active {
+        background-color: #e9ecef;
+        color: #ff85a2;
+        border-color: #ff85a2;
+    }
+}
+
+/* Estilos para la notificación móvil */
+.notification {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    background-color: #ff85a2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    transition: bottom 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.notification.show {
+    bottom: 20px;
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optimizaciones para dispositivos con movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .reduced-motion .fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+.main-header {
+    padding: 20px 0;
+    background-color: #F5DADA;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff6b95;
+    margin: 0;
+}
+
+.logo span {
+    color: #333;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Utilidades */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Mejoras para dispositivos táctiles - Versión corregida */
+@media (hover: hover) {
+    .category-card:hover {
+        transform: translateY(-10px);
+    }
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    min-height: 80vh;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.accent {
+    color: #ff6b95;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background-color: #ff6b95;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 149, 0.3);
+}
+
+/* Estilos de hover solo para dispositivos que soportan hover */
+@media (hover: hover) {
+    .btn-primary:hover {
+        background-color: #ff4f83;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 107, 149, 0.4);
+    }
+    
+    .btn-secondary:hover {
+        background-color: rgba(255, 107, 149, 0.1);
+        transform: translateY(-3px);
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ff6b95;
+    border: 2px solid #ff6b95;
+}
+
+/* Efecto de onda al hacer clic (para dispositivos táctiles) */
+.btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+}
+
+.btn:active::after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+/* Estado deshabilitado */
+.btn:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Sección de categorías */
+.categories {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #ffd;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6b95;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Estilos base para tarjetas de categoría */
+.category-img {
+    height: 200px;
+    background-color: #ffd6e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-img svg {
+    width: 80px;
+    height: 80px;
+    fill: #ff6b95;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efectos hover solo para dispositivos que lo soportan */
+@media (hover: hover) {
+    .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .category-card:hover .category-image {
+        transform: scale(1.1);
+    }
+}
+
+.category-content {
+    padding: 20px;
+}
+
+.category-content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #ff6b95;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6b95;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Sección Sobre Nosotros */
+.about-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.about-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h3 {
+    color: #ff6b95;
+    margin: 25px 0 15px 0;
+    font-size: 22px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Responsive */
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero {
+        min-height: 70vh;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero {
+        padding: 50px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .hero-content h2 {
+        font-size: 36px;
+    }
+    
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-card {
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .about-text h3 {
+        font-size: 20px;
+    }
+    
+    .form-control {
+        padding: 10px;
+        font-size: 16px; /* Evita zoom automático en iOS */
+        -webkit-appearance: none; /* Mejora la apariencia en iOS */
+    }
+    
+    .btn[type="submit"] {
+        padding: 12px 0;
+        width: 100%;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 375px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .category-content h3 {
+        font-size: 18px;
+    }
+    
+    textarea.form-control {
+        min-height: 100px;
+    }
+}

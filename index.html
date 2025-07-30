@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta
+      name="description"
+      content="Lazos Encantados - Tienda de lazos artesanales para niñas. Descubre nuestra colección de lazos para eventos, escolares, temáticos y personalizados."
+    />
+    <meta
+      name="keywords"
+      content="lazos para niñas, accesorios infantiles, lazos artesanales, lazos para eventos, lazos escolares, lazos temáticos, lazos personalizados"
+    />
+    <meta name="author" content="Lazos Encantados" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ff6b95" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      property="og:title"
+      content="Lazos Encantados - Accesorios para Niñas | Lazos Artesanales"
+    />
+    <meta
+      property="og:description"
+      content="Tienda de lazos artesanales para niñas. Descubre nuestra colección de lazos para eventos, escolares, temáticos y personalizados."
+    />
+    <meta property="og:image" content="/images/foto1.jpeg" />
+    <meta property="og:url" content="https://trae_jlby86tt.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://trae_jlby86tt.vercel.app/" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Lazos Encantados - Accesorios para Niñas | Lazos Artesanales</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/favicon.ico" href="imagenes/favicon.ico" />
+  
+  </head>
+  <body>
+            <!-- Header -->
+            
+    <header class="main-header">
+      <div class="container">
+        <h1 class="logo">Lazos<span>Encantados</span></h1>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#contact" class="btn btn-secondary">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-content">
+            <h2 id="hero-heading">
+              Lazos <span class="accent">Mágicos</span> para Princesas
+              Especiales
+            </h2>
+            <p>
+              Descubre nuestra colección de lazos artesanales diseñados con amor
+              para resaltar la belleza natural de las niñas. Cada lazo cuenta
+              una historia única.
+            </p>
+            <div class="cta-buttons">
+              <a href="#categories" class="btn btn-primary">Ver Colección</a>
+              <a href="#about" class="btn btn-secondary">Sobre Nosotros</a>
+            </div>
+          </div>
+          <figure class="hero-image">
+            <img
+              src="imagenes/foto-niña1.jpeg"
+              alt="Niña con lazo"
+              class="banner-img"
+              width="500"
+              height="400"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="categories"
+        id="categories"
+        aria-labelledby="categories-heading"
+      >
+        <div class="container">
+          <h2 id="categories-heading" class="section-title">
+            Nuestras Categorías
+          </h2>
+          <p>
+            Explora nuestra variedad de estilos y encuentra el lazo perfecto
+            para cada ocasión
+          </p>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <figure class="category-img">
+                <img
+                  src="imagenes/Lazos1.jpg"
+                  alt="Lazos para Eventos"
+                  class="category-image"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                />
+              </figure>
+              <div class="category-content">
+                <h3>Lazos para Eventos</h3>
+                <p>Perfectos para bodas, bautizos y celebraciones especiales</p>
+                <a
+                  href="#eventos"
+                  class="btn btn-secondary"
+                  data-category="eventos"
+                  >Ver Colección</a
+                >
+              </div>
+            </article>
+
+            <article class="category-card">
+              <figure class="category-img">
+                <img
+                  src="imagenes/escolaress2.jpg"
+                  alt="Lazos Escolares"
+                  class="category-image"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                />
+              </figure>
+              <div class="category-content">
+                <h3>Lazos Escolares</h3>
+                <p>Diseños prácticos y duraderos para el día a día</p>
+                <a
+                  href="#escolares"
+                  class="btn btn-secondary"
+                  data-category="escolares"
+                  >Ver Colección</a
+                >
+              </div>
+            </article>
+
+            <article class="category-card">
+              <figure class="category-img">
+                <img
+                  src="imagenes/lazostematicos3jpg.jpg"
+                  alt="Lazos Temáticos"
+                  class="category-image"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                />
+              </figure>
+              <div class="category-content">
+                <h3>Lazos Temáticos</h3>
+                <p>Diseños especiales para fiestas y temporadas</p>
+                <a
+                  href="#tematicos"
+                  class="btn btn-secondary"
+                  data-category="tematicos"
+                  >Ver Colección</a
+                >
+              </div>
+            </article>
+
+            <article class="category-card">
+              <figure class="category-img">
+                <img
+                  src="imagenes/lazosPersonalisados.jpg"
+                  alt="Lazos Personalizados"
+                  class="category-image"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                />
+              </figure>
+              <div class="category-content">
+                <h3>Personalizados</h3>
+                <p>Crea un diseño único con nuestro servicio personalizado</p>
+                <a
+                  href="#personalizados"
+                  class="btn btn-secondary"
+                  data-category="personalizados"
+                  >Ver Colección</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Sobre Nosotros -->
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading" class="section-title">Sobre Nosotros</h2>
+          <p>
+            En Lazos Encantados, nos dedicamos a crear accesorios únicos que
+            resaltan la belleza natural de cada niña.
+          </p>
+
+          <div class="about-content">
+            <div class="about-text">
+              <article>
+                <h3>Nuestra Historia</h3>
+                <p>
+                  Comenzamos como un pequeño taller familiar con la misión de
+                  crear lazos artesanales de alta calidad. Hoy, seguimos
+                  manteniendo ese espíritu artesanal en cada pieza que creamos.
+                </p>
+              </article>
+
+              <article>
+                <h3>Nuestro Compromiso</h3>
+                <p>
+                  Utilizamos materiales seguros y de alta calidad para
+                  garantizar que nuestros lazos no solo sean hermosos, sino
+                  también duraderos y cómodos para las niñas.
+                </p>
+              </article>
+
+              <article>
+                <h3>Diseño Personalizado</h3>
+                <p>
+                  Cada lazo es creado con atención al detalle y amor. Ofrecemos
+                  servicios de personalización para crear el accesorio perfecto
+                  para cada ocasión especial.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    </main>  <!-- Sección de contacto -->
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <h2 id="contact-heading" class="section-title">Contáctanos</h2>
+          <p>
+            ¿Tienes alguna pregunta o necesitas un diseño personalizado?
+            Escríbenos y te responderemos lo antes posible.
+          </p>
+
+          <div
+            class="contact-form-container"
+            style="max-width: 600px; margin: 0 auto"
+          >
+            <form id="contact-form" aria-label="Formulario de contacto">
+              <div class="form-group">
+                <label for="name" class="visually-hidden">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Tu nombre"
+                  aria-required="true"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="visually-hidden">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Tu email"
+                  aria-required="true"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="visually-hidden">Mensaje</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Tu mensaje"
+                  aria-required="true"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" >
+        </script>
+        <script>
+           emailjs.init("2045d13ywMqsPm76-"); // ← Reemplaza con tu User ID real
+      </script>
+
+          
+              
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <section class="footer-section">
+            <h3>Lazos Encantados</h3>
+            <p>
+              Creando magia para las princesas de hoy, con diseños únicos y
+              materiales de alta calidad.
+            </p>
+          </section>
+
+          <nav class="footer-section" aria-label="Enlaces de pie de página">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#categories">Colección</a></li>
+              <li><a href="#about">Sobre Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <address class="footer-section">
+            <h3>Contacto</h3>
+            <ul>
+              <li>
+                Email:
+                <a href="mailto:herreralia27@gmail.com"
+                  >herreralia27@gmail.com</a
+                >
+              </li>
+              <li>Teléfono: <a href=""></a></li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 Lazos Encantados. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Registrar el Service Worker para PWA
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado con éxito:",
+                registration.scope
+              );
+            })
+            .catch((error) => {
+              console.log("Error al registrar el Service Worker:", error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "Lazos Encantados",
+  "short_name": "Lazos",
+  "description": "Tienda de lazos artesanales para niñas. Descubre nuestra colección de lazos para eventos, escolares, temáticos y personalizados.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#BAEEEAEF",
+  "theme_color": "#ff6b95",
+  "icons": [
+    {
+      "src": "/images/lazo-personalizado.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "imagenes/lazosPersonalisados.jpg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
