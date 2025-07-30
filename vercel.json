@@ -3,11 +3,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "github": {
-    "silent": true
+    "silent": true 
   },
   "headers": [
     {
-      "source": "/:path*.(css|js)",
+      "source": "/:file.css",
       "headers": [
         {
           "key": "Cache-Control",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "source": "/images/(.*)",
+      "source": "/:file.js",
       "headers": [
         {
           "key": "Cache-Control",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(?:css|js)",
+      "source": "/imagenes/:image*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -51,6 +51,10 @@
     }
   ],
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true }
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
